@@ -1,0 +1,54 @@
+html {
+	font-family: sans-serif;
+}
+body {
+  background-color: #F4E1DF;
+  padding: 1em;
+}
+a {
+	text-decoration: none;
+	color: #124e82;
+}
+h1{
+	text-align: center;
+	font-size: 3em;
+}
+h2{
+	font-size: 2.5em;
+	margin: 0.2em auto;
+}
+h3 {
+	margin: 0 auto;
+	font-size: 2em;
+}
+ul{
+	list-style: none;
+}
+li {
+	margin-bottom: 0.5em;
+	font-size: 1.2em;
+}
+section {
+	border-bottom: 2px dotted #dba39c;
+	background-color: #EFF6FF;
+	margin: 1em;
+	padding: 2em;
+}
+.titleText {
+	cursor: help;
+}
+.titleItal {
+	font-style: italic;
+}
+.exampleDiv {
+	width: 40em;
+	margin: 1em auto;
+	padding: 1em;
+	background-color: #D2E39C;
+}
+
+.metricPrefix{
+	cursor: help;
+	color: #971817;
+	font-weight: 600;
+}
