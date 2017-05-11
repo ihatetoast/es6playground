@@ -81,6 +81,34 @@ demonDiv.innerHTML = markup_dem_mnem;
 
 templateStrings.append(demonDiv);
 
+/*element flashcarcs/quiz*/
+
+
+function Elem(name, number, mass, trivia){
+  this.name = name;
+  this.number = number;
+  this.mass = mass;
+  this.trivia = trivia;
+}
+let elementCards = [];
+/* http://small-tiyfe.herokuapp.com/collections/katyelements */
+const saveBtn = document.getElementById('saveBtn');
+saveBtn.addEventListener('click', function(e){
+  e.preventDefault();
+  //get value of fields
+ 
+  const name = document.getElementById('elemEntry').value.trim();
+  const number = document.getElementById('atomNoEntry').value.trim();
+  const mass = document.getElementById('atomMassEntry').value.trim();
+  const trivia = document.getElementById('trivia').value.trim();
+  
+  let elementCard = new Elem(name, number, mass, trivia);
+  console.log(elementCard);
+  elementCards.push(elementCard);
+  console.log(elementCards);
+  document.querySelectorAll('.inputFields').value = '';
+  //capture the entry, create an object and push to an array
+});
 
 
 
