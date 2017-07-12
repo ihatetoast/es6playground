@@ -112,6 +112,29 @@ saveBtn.addEventListener('click', function(e){
 
 
 
+const foods = ['meats', 'fruits', 'nuts', 'vegetables', 'dairy'];
+const foodMarkup = `
+<ul>
+  ${foods.map(food => `<li>${food}</li>`).join('')}
+</ul>
+`
+document.getElementById('food-forofloop').innerHTML = foodMarkup;
+console.log(foodMarkup);
+for (const food of foods){
+  console.log(food);
+
+}
+const fruits = ['apple', 'pear', 'orange', 'strawberry'];
+for (const [i, fruit] of fruits.entries()){
+  console.log(`${fruit} is the ${i} item`);
+}
+
+const paras = document.querySelectorAll('.paras');
+for (const para of paras){
+  para.addEventListener('click', function(){
+    console.log(this.textContent);
+  })
+}
 
 
 
