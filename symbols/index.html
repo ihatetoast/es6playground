@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<script>
+		const katy = Symbol('katy');
+		const person = Symbol('katy');
+
+		const classList ={
+			[Symbol('katie')]: {grade: 75, gender: 'f'}, 
+			[Symbol('tristan')]: {grade: 87, gender: 'm'}, 
+			[Symbol('tristan')]: {grade: 45, gender: 'm'}, 
+			[Symbol('anna')]: {grade: 50, gender: 'f'}
+		}
+//can't iterate over symbols. how to get data?
+const syms = Object.getOwnPropertySymbols(classList);
+const classData = syms.map(sym=>classList[sym]);
+console.log(classData);
+
+	</script>
+</body>
+</html>
